@@ -18,6 +18,6 @@ November 2026
 ### How to View
 
 Visit the presentation at:
-👉 **[https://bcgov-noris.github.io/REPO-NAME/](https://bcgov-noris.github.io/REPO-NAME/)**
+👉 **[https://bcgov-noris.github.io/edca200cbc/](https://bcgov-noris.github.io/edca200cbc)**
 
 Note: This site requires an internet connection to load fonts, icons, embedded media and the Bootstrap framework from external sources.
