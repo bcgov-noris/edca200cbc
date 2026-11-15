@@ -55,119 +55,233 @@
     </div>
     <div class="w-100 my-4 bg-light">
       <div class="container p-md-5 p-4">
-        <div class="row mt-3 mb-5">
-          <div class="col-md-2">
-            <ul class="nav nav-pills flex-column mb-2 mb-md-0" id="themes" role="tablist" aria-orientation="vertical">
-              <li class="nav-item"><button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Context</button> </li>
-              <li class="nav-item"><button class="nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Purpose</button></li>
-              <li class="nav-item"><button class="nav-link" id="tab3-tab" data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Features</button></li>
-              <li class="nav-item"><button class="nav-link" id="tab4-tab" data-bs-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">Philosophy</button></li>
-              <li class="nav-item"><button class="nav-link" id="tab5-tab" data-bs-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false">Change over time</button></li>
-              <li class="nav-item"><button class="nav-link" id="tab6-tab" data-bs-toggle="tab" href="#tab6" role="tab" aria-controls="tab6" aria-selected="false">Similar/different</button></li>
-            </ul>
-          </div>
-          <div class="col-md-10 pl-md-0">
-            <div class="nav-pills tab-content" id="themesContent">
-              <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab" tabindex="0">
-                <h2 class="mt-0" style="color: var(--navy);">Context</h2>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <h3>Then</h3>
-                    <hr class="d-lg-none">
-                  </div>
-                  <div class="col-lg-6">
-                    <h3 style="color: var(--red)">Now</h3>
-                  </div>
+
+
+        <!-- Jump-to menu -->
+        <nav aria-label="Sections" class="my-4">
+          <ul class="nav gap-2">
+            <li class="nav-item"><a class="btn btn-outline-dark btn-sm" href="#part-then">The CBC then: Citizens' Forum</a></li>
+            <li class="nav-item"><a class="btn btn-outline-dark btn-sm" href="#part-now">The CBC now: Ideas</a></li>
+            <li class="nav-item"><a class="btn btn-outline-dark btn-sm" href="#part-insight">Why it matters</a></li>
+            <li class="nav-item"><a class="btn btn-outline-dark btn-sm" href="#references">References</a></li>
+          </ul>
+        </nav>
+
+        <!-- ===================== PART 1: THEN ===================== -->
+        <section id="part-then" class="my-5">
+          <h2 class="then-heading">The CBC then: Citizens' Forum</h2>
+          <!-- Optional: logo figure here -->
+
+          <div class="accordion mt-3" id="then-accordion">
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#then-q1" aria-expanded="true" aria-controls="then-q1">
+                  Description of the program
+                </button>
+              </h3>
+              <div id="then-q1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <!-- Your content -->
                 </div>
-              </div>
-              <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab" tabindex="0">
-                <h2 class="mt-0" style="color: var(--navy);">Purpose</h2>
-                <div class="d-flex my-3 ms-0">
-                  <i class="bi bi-quote me-3" style="font-size: 6rem; color:var(--red); line-height: 1; margin-top: -2%;"></i>
-                  <p class="fs-5">
-                    "Personal narratives involve reflection on one's life story and can be empowering. This process, Rossiter and Clark assert, "is at the heart of learning and change in adulthood"" <br>
-                    <span class="d-block small text-end"><em>(Merriam & Baumgartner, 2020, p. 258)</em></span>
-                  </p>
-                  <i class="bi bi-quote ms-3" style="font-size: 6rem; color:var(--red); line-height: 1; rotate: 180deg;"></i>
-                </div>
-                <ul>
-                  <li>Rossiter and Clark (2007) organize narrative into four types: cultural, familial, individual, and organizational (as cited in Merriam & Baumgartner, 2020, p. 257) <ul>
-                      <li><strong>Cultural narratives:</strong> the ideas that we take for granted, that we are immersed like the air we breathe (Merriam & Baumgartner, 2020, p. 257)</li>
-                      <li><strong>Family narratives:</strong> values and beliefs, customs, roles and rituals (Merriam & Baumgartner, 2020, p. 258)</li>
-                      <li><strong>Individual narratives:</strong> the stories we create about our own lives. When incorporating reflection, this can be empowering (Merriam & Baumgartner, 2020, p. 258)</li>
-                      <li><strong>Organizational narratives:</strong> stories also structure meaning within the organizations in our society (Merriam & Baumgartner, 2020, p. 258)</li>
-                    </ul>
-                  </li>
-                </ul>
-                <h4>Core Belief: Purpose</h4>
-                <p>Along with my core belief around story, the types and layers of narrative connect with my core belief of purpose. In my work in corporate learning, I often have to navigate the tension between learner needs and organizational goals. The stories that we tell ourselves and each other can help shift an organizational narrative and drive lasting impact.</p>
-              </div>
-              <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab" tabindex="0">
-                <h3 class="mt-0" style="color: var(--red);">Story in Practice: Forms and Tools</h3>
-                <div class="d-flex my-3 ms-0">
-                  <i class="bi bi-quote me-3" style="font-size: 6rem; color:var(--red); line-height: 1; margin-top: -2%;"></i>
-                  <p class="fs-5">
-                    "Using stories to engage students in ideas that are part of course content may be the only way to allow understanding to occur. It is also a powerful means of making connections not only with ideas but with other learners, perhaps ultimately creating a learning community. Whether these stories are generated by students themselves, are case studies, or are fictional accounts, they draw us in, they allow us to see from another's perspective." <br>
-                    <span class="d-block small text-end"><em>(Merriam & Baumgartner, 2020, p. 260)</em></span>
-                  </p>
-                  <i class="bi bi-quote ms-3" style="font-size: 6rem; color:var(--red); line-height: 1; rotate: 180deg;"></i>
-                </div>
-                <ul>
-                  <li>De Groot (2018) names four modes of narrative learning: learning from narratives/stories, learning through narrating one's own story, learning by recognizing that one's citizenship identity is narratively constituted, and "learning to position existing societal and cultural narratives in their cultural and historical context" (as cited in Merriam & Baumgartner, 2020, p. 259).</li>
-                  <li>Rossiter and Clark (2007) identify three modes in which stories appear in practice: "storying" the curriculum, storytelling, and autobiography" (as cited in Merriam & Baumgartner, 2020, p. 259).</li>
-                  <li>Jonassen and Hernandez-Serrano (2002) discuss how things like case studies and scenarios can expand our understanding (as cited in Merriam & Baumgartner, 2020, p. 260).</li>
-                </ul>
-                <h4>Core Belief: Connection</h4>
-                <p>These examples of narrative learning types also support my core belief of connection. In my role, I rarely work in direct contact with learners. While I can include prompts and case studies that reflect warmth and compassion, I can't always create emotional safety through live interaction. I find it helpful to remember that learning relationships can be formed in all types of interactions, even asynchronous ones.</p>
-              </div>
-              <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab" tabindex="0">
-                <h3 class="mt-0" style="color: var(--red);">Narrative and Self-Reflection</h3>
-                <div class="d-flex my-3 ms-0">
-                  <i class="bi bi-quote me-3" style="font-size: 6rem; color:var(--red); line-height: 1; margin-top: -2%;"></i>
-                  <p class="fs-5">
-                    "While we do not have control over many of the events or circumstances of our lives, we do have some choice as to how we interpret them. If something unpleasant happens it is not imperative that we will see it as the end of all happiness forever and ever. This realization of choice in meaning making is one of the most valuable aspects of the narrative orientation" <br>
-                    <span class="d-block small text-end"><em>(Rossiter & Clark, as cited in Merriam & Baumgartner, 2020, p. 264)</em></span>
-                  </p>
-                  <i class="bi bi-quote ms-3" style="font-size: 6rem; color:var(--red); line-height: 1; rotate: 180deg;"></i>
-                </div>
-                <ul>
-                  <li>Journaling is an effective strategy and counselling tool for dealing with the challenges of everyday life. (Merriam & Baumgartner, 2020, p. 261)</li>
-                  <li>Individual self-reflection can help adults develop a narrative framework for their lives (Merriam & Baumgartner, 2020, p. 264)</li>
-                </ul>
-                <h4>Core Belief: Resilience</h4>
-                <p>This element of self-reflection is closely tied to my core belief of resilience. Change is a normal and necessary part of learning design, not a sign of failure. Confidence and growth are built by working through problems with self-compassion, not avoiding them because it's not perfect the first time.</p>
-              </div>
-              <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab5-tab" tabindex="0">
-                <h3 class="mt-0" style="color: var(--red);">Narrative and Transformative Learning</h3>
-                <div class="d-flex my-3 ms-0">
-                  <i class="bi bi-quote me-3" style="font-size: 6rem; color:var(--red); line-height: 1; margin-top: -2%;"></i>
-                  <p class="fs-5"> "Whereas Mezirow's [transformational learning] process most often begins with a "disorienting dilemma" that causes us to examine our underlying assumptions and values, Randall suggests that when we encounter a life experience that cannot be accommodated by our old story of ourselves and the world, we seek to restory our lives"<br>
-                    <span class="d-block small text-end"><em>(Merriam & Baumgartner, 2020, pp. 264-265)</em></span>
-                  </p>
-                  <i class="bi bi-quote ms-3" style="font-size: 6rem; color:var(--red); line-height: 1; rotate: 180deg;"></i>
-                </div>
-                <ul>
-                  <li>"Restorying" involves changing the dominant story we tell about ourselves when our current story is no longer coherent (Merriam & Baumgartner, 2020, p. 265)</li>
-                  <li>Hearing other people's stories expose learners to other perspectives on the world, which is key to critical self-reflection and transformative learning (Merriam & Baumgartner, 2020, p. 265)</li>
-                  <li>The stories of our lives also include cognitive, emotional, embodied and spiritual dimensions (Merriam & Baumgartner, 2020, p. 265)</li>
-                </ul>
-                <h4>Core Belief: Agency</h4>
-                <p>With its deeply personal element of self-reflection or restorying, I find this aspect of narrative learning to connect with my core belief of agency. To bring this into my practice, I try to offer a variety of learning activities so that everyone can find something that meets their needs.</p>
-                <p>Jarvis includes both experimental learning (the result of a person experimenting on the environment) and reflective practice (thinking about and monitoring one's practice as it is happening) with what he conceives as the highest forms of learning (as cited in Merriam & Baumgartner, 2020, p. 203). I look for ways to incorporate both types of learning into the large-scale, asynchronous courses I design.</p>
               </div>
             </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#then-q2" aria-expanded="false" aria-controls="then-q2">
+                  Social, political and economic context
+                </button>
+              </h3>
+              <div id="then-q2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <!-- Your content -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#then-q3" aria-expanded="false" aria-controls="then-q3">
+                  Purpose of the program
+                </button>
+              </h3>
+              <div id="then-q3" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <!-- Your content -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#then-q4" aria-expanded="false" aria-controls="then-q4">
+                  Main features of the program
+                </button>
+              </h3>
+              <div id="then-q4" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <!-- Your content -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#then-q5" aria-expanded="false" aria-controls="then-q5">
+                  Philosophy of the program
+                </button>
+              </h3>
+              <div id="then-q5" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <!-- Your content -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#then-q6" aria-expanded="false" aria-controls="then-q6">
+                  How and why the philosophy and program changed over time
+                </button>
+              </h3>
+              <div id="then-q6" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <!-- Your content. Your key dates timeline could go here. -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#then-q7" aria-expanded="false" aria-controls="then-q7">
+                  Assessment of the importance of the program
+                </button>
+              </h3>
+              <div id="then-q7" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <!-- Your content -->
+                </div>
+              </div>
+            </div>
+
           </div>
-        </div>
+        </section>
+
+        <!-- ===================== PART 2: NOW ===================== -->
+        <section id="part-now" class="my-5">
+          <h2 class="now-heading">The CBC now: Ideas</h2>
+          <!-- Optional: logo figure here -->
+
+          <div class="accordion mt-3" id="now-accordion">
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#now-q1" aria-expanded="true" aria-controls="now-q1">
+                  Description of the program
+                </button>
+              </h3>
+              <div id="now-q1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <!-- Your content -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#now-q2" aria-expanded="false" aria-controls="now-q2">
+                  Purpose of the program
+                </button>
+              </h3>
+              <div id="now-q2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <!-- Your content -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#now-q3" aria-expanded="false" aria-controls="now-q3">
+                  Philosophy of the program
+                </button>
+              </h3>
+              <div id="now-q3" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <!-- Your content -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#now-q4" aria-expanded="false" aria-controls="now-q4">
+                  Main features of the program
+                </button>
+              </h3>
+              <div id="now-q4" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <!-- Your content -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#now-q5" aria-expanded="false" aria-controls="now-q5">
+                  How it is similar to and different from Citizens' Forum
+                </button>
+              </h3>
+              <div id="now-q5" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <!-- Your content -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#now-q6" aria-expanded="false" aria-controls="now-q6">
+                  Current social, political and economic context
+                </button>
+              </h3>
+              <div id="now-q6" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <!-- Your content -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#now-q7" aria-expanded="false" aria-controls="now-q7">
+                  Assessment of the importance of the program
+                </button>
+              </h3>
+              <div id="now-q7" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <!-- Your content -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
       </div>
     </div>
     <div class="container-md p-md-5 p-4 bg-light">
-      <div class="mx-auto" style="max-width: 100ch;">
-        <h2>Insight and importance</h2>
-        <h3>Relevance to adult educators</h3>
-        <h2>Discussion question</h2>
+      <div class="mx-auto" style="max-width: 100ch;" id="part-insight">
+        <h2>Why it matters for adult educators</h2>
+        <!-- Your insight and conclusions (Insight: 20 marks; Conclusions: 10 marks) -->
+
+        <h3 class="mt-4">Discussion question</h3>
+        <!-- Your discussion question -->
 
         <hr class="mt-5">
-        <h2>References</h2>
+        <h2 id="references">References</h2>
         <p>Boardman, A. E., & Vining, A. R. (1996). Public Service Broadcasting in Canada. Journal of Media Economics, 9(1), 47–61. https://doi.org/10.1207/s15327736me0901_5</p>
         <p>Cassirer, H. R. (1959). Audience Participation, New Style. The Public Opinion Quarterly, 23(4), 529–536.</p>
         <p>
