@@ -1,0 +1,122 @@
+/* Colour palette: vintage, from the 1940-1958 CBC/Radio-Canada logo (contrast-checked) */
+:root {
+  --navy: #1F2A4D;   /* navy: headings, tabs, "then" headings (14:1 on white, 12.2:1 on cream) */
+  --red: #A8202A;    /* deep red: active tab, quote marks, "now" headings (7.2:1 on white, 6.3:1 on cream) */
+  --gold: #C9A227;   /* gold: header background with navy text (5.8:1); backgrounds and lines only, not for text */
+  --bg: #F5EFE0;     /* warm cream page background */
+  --text: #2B2B2B;   /* charcoal body text (12.3:1 on cream) */
+  --detail: #6B5B3E; /* warm brown: small details (5.7:1 on cream) */
+}
+
+body {
+  font-size: 1rem;
+  color: var(--text);
+}
+
+/* Headings for then-and-now columns: use with headings, not colour alone */
+.then-heading {
+  color: var(--navy) !important;
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: .25rem;
+}
+
+.now-heading {
+  color: var(--red) !important;
+  border-bottom: 3px solid var(--red);
+  padding-bottom: .25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--navy);
+}
+
+/* Styling for left-hand pill tab group with arrows */
+/* !important added to styles that were being overridden on small screens */
+.nav-tabs,
+.nav-pills {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: unset;
+}
+
+.nav-tabs .nav-link {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: var(--navy);
+  border-radius: .25rem .25rem 0 0;
+  border: none;
+  margin-right: .18rem;
+  padding: 0.68rem 1.18rem;
+  box-shadow: inset 0.18rem 0 0 0 var(--navy), inset -0.18rem 0 0 0 var(--navy), inset 0 0.18rem 0 0 var(--navy), inset 0 -0.18rem 0 0 transparent;
+  --max-lines: 2.5;
+  position: relative;
+  max-height: calc(var(--lh) * var(--max-lines));
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #ffffff !important;
+  color: var(--red) !important;
+  margin-bottom: -2px;
+  padding-bottom: 0.82rem;
+  box-shadow: inset 0.18rem 0 0 0 var(--red), inset -0.18rem 0 0 0 var(--red), inset 0 0.18rem 0 0 var(--red), inset 0 -0.18rem 0 0 #ffffff;
+}
+
+.nav-pills .nav-link {
+  background-color: #ffffff;
+  color: var(--red);
+  font-weight: bold;
+  border-radius: .25rem;
+  border: solid var(--red) 2px !important;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.nav-pills .nav-link.active {
+  color: #ffffff !important;
+  background-color: var(--red) !important;
+}
+
+/* Add indicator arrow for the active tab above md breakpoint */
+@media (min-width: 768px) {
+  .nav-pills .nav-link::before {
+    content: '';
+    display: block;
+    border-top: 8px solid transparent;
+    border-left: 10px solid var(--red);
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+
+.nav-pills .nav-link.active::before {
+  opacity: 1;
+}
+
+.nav-pills li.nav-item+li.nav-item {
+  margin-top: .5rem;
+}
+
+.nav-pills.tab-content {
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 0 1rem;
+  background-color: #ffffff;
+  border: var(--red) 2px solid;
+  height: 100%;
+}
+
+li.nav-item+li.nav-item {
+  margin-top: 0;
+}
