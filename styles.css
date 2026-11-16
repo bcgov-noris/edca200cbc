@@ -441,3 +441,48 @@ section[id] {
   margin: 0 auto;
   padding: 0 3rem;
 }
+
+@media print {
+
+  /* Show all accordion content even if closed */
+  .accordion-collapse {
+    display: block !important;
+    height: auto !important;
+  }
+
+  /* Hide things that don't work on paper */
+  #back-to-top,
+  #toggle-all,
+  .accordion-button::after,
+  iframe {
+    display: none !important;
+  }
+
+  /* Start each main part on a new page */
+  #part-then,
+  #part-now,
+  #part-insight,
+  #references {
+    break-before: page;
+  }
+
+  /* Don't split these across pages */
+  .accordion-item,
+  .feature-quote,
+  .audio-card,
+  figure,
+  .card {
+    break-inside: avoid;
+  }
+
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+
+  /* Keep background colours */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
