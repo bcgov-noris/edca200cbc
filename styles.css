@@ -6,8 +6,8 @@
   /* deep red: active tab, quote marks, "now" headings (7.2:1 on white, 6.3:1 on cream) */
   --sky: #9CCBEB;
   /* sky blue from the 1940 logo: header background with navy text (8.1:1); backgrounds and lines only, not for text */
-  --bg: #F5EFE0;
-  /* warm cream page background */
+  --bg: #ffffff;
+  /* white page background */
   --text: #2B2B2B;
   /* charcoal body text (12.3:1 on cream) */
   --detail: #6B5B3E;
@@ -303,8 +303,6 @@ section[id] {
 
 Accordion colours · CSS
 /* ===== Accordion colours by section + thinner focus ring =====
-   Paste into styles.css. Replaces the "Optional CSS" accordion block
-   from accordion-shell.html, so delete that block if you added it.
    Contrast checked: navy on sky 8.1:1, red on pale pink 6.3:1, navy on white 14:1.
 */
  
@@ -373,35 +371,7 @@ Accordion colours · CSS
   font-size: .9rem;
   color: var(--detail);
 }
- 
-/* ===== HTML pattern for a feature quote (paste inside an accordion-body) =====
- 
-<blockquote class="feature-quote">
-  <p class="mb-0">"Quote text here."</p>
-  <footer>(Author, year, p. #)</footer>
-</blockquote>
-<p>Your text here.</p>
- 
-===== HTML pattern for the media row (paste after the h2, before the accordion) =====
- 
-<div class="row part-media align-items-center mt-3">
-  <div class="col-md-4">
-    <figure>
-      <img src="images/logo-1940.png" class="img-fluid" alt="Describe the logo here">
-      <figcaption>Caption and source (Author, year)</figcaption>
-    </figure>
-  </div>
-  <div class="col-md-8">
-    <figure>
-      <figcaption class="mb-2">Title of the clip and source (Author, year)</figcaption>
-      <audio controls class="w-100" src="audio/file.mp3"></audio>
-      <p class="small mt-2">One or two sentences on what the clip is about.</p>
-    </figure>
-  </div>
-</div>
- 
-*/
- 
+  
  
 /* ===== Audio cards (added November 15) =====
    Why "Featured episode" looked small: .part-media figcaption above sets
@@ -443,3 +413,10 @@ Accordion colours · CSS
  
 #part-then .audio-card { --card-colour: var(--navy); }
 #part-now .audio-card { --card-colour: var(--red); }
+
+.references-band {
+  background-color: #EAF4FB;
+  border-top: 4px solid var(--navy);
+  margin-top: 3rem;
+  font-size: .95rem;
+}
