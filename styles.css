@@ -179,7 +179,6 @@ li.nav-item+li.nav-item {
 
 .feature-quote footer {
   font-size: .9rem;
-  text-align: right;
   font-style: italic;
   margin-top: .5rem;
 }
@@ -353,7 +352,6 @@ section[id] {
 
 .feature-quote footer {
   font-size: .9rem;
-  text-align: right;
   font-style: italic;
   margin-top: .5rem;
 }
@@ -443,5 +441,5 @@ section[id] {
 .band-inner {
   max-width: 110ch;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 3rem;
 }
