@@ -1,6 +1,6 @@
 ## The CBC as Adult Educator: Citizens' Forum and Ideas
 
-An online presentation for EDCA 200, Assignment 3: History of One Adult Education Program and Today's Counterpart(s). It looks at the Canadian Broadcasting Corporation's role in adult education, using CBC Radio's *Citizens' Forum* (1943 to the mid-1950s) as the historical example and *Ideas* (1965 to today) as the modern counterpart.
+An online presentation for EDCA 200, Assignment 3: History of One Adult Education Program and Today's Counterpart(s). It looks at the Canadian Broadcasting Corporation's role in adult education, using CBC Radio's *Citizens' Forum* (1943 to 1964) as the historical example and *Ideas* (1965 to today) as the modern counterpart.
 
 ### Contents
 
