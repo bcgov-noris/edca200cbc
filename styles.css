@@ -171,25 +171,44 @@ li.nav-item+li.nav-item {
 
 /* Feature quote at the top of an accordion body */
 .feature-quote {
-  border-left: 4px solid var(--quote-colour, var(--navy));
-  padding: .5rem 0 .5rem 1rem;
+  position: relative;
+  background-color: var(--quote-bg, #EAF4FB);
+  border-radius: .5rem;
+  padding: 2.75rem 1.25rem 1rem;
   margin: 0 0 1.25rem 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
+}
+
+.feature-quote::before {
+  content: "\f6b0";
+  /* Bootstrap quote icon */
+  font-family: "bootstrap-icons";
+  position: absolute;
+  top: .5rem;
+  left: 1rem;
+  font-size: 2.25rem;
+  line-height: 1;
+  color: var(--quote-colour, #4A90C2);
 }
 
 .feature-quote footer {
-  font-size: .9rem;
+  font-size: .85rem;
+  text-align: right;
   font-style: italic;
   margin-top: .5rem;
+  color: var(--detail);
 }
 
 #then-accordion .feature-quote {
-  --quote-colour: var(--navy);
+  --quote-colour: #4A90C2;
+  --quote-bg: #EAF4FB;
 }
 
 #now-accordion .feature-quote {
   --quote-colour: var(--red);
+  --quote-bg: #FAEBEC;
 }
+
 
 /* Media at the top of each part: stacks on phones, side by side on wider screens */
 .part-media figure {
@@ -340,28 +359,6 @@ section[id] {
   --bs-accordion-border-color: #E8B9BC;
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23A8202A' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23A8202A' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-}
-
-/* Feature quote at the top of an accordion body */
-.feature-quote {
-  border-left: 4px solid var(--quote-colour, var(--navy));
-  padding: .5rem 0 .5rem 1rem;
-  margin: 0 0 1.25rem 0;
-  font-size: 1.1rem;
-}
-
-.feature-quote footer {
-  font-size: .9rem;
-  font-style: italic;
-  margin-top: .5rem;
-}
-
-#then-accordion .feature-quote {
-  --quote-colour: var(--navy);
-}
-
-#now-accordion .feature-quote {
-  --quote-colour: var(--red);
 }
 
 /* Media at the top of each part: stacks on phones, side by side on wider screens */
