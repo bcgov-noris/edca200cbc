@@ -127,18 +127,77 @@ li.nav-item+li.nav-item {
   margin-top: 0;
 }
 
+Accordion colours · CSS
+/* ===== Accordion colours by section + thinner focus ring =====
+   Paste into styles.css. Replaces the "Optional CSS" accordion block
+   from accordion-shell.html, so delete that block if you added it.
+   Contrast checked: navy on sky 8.1:1, red on pale pink 6.3:1, navy on white 14:1.
+*/
+ 
+/* Shared: bold question titles, no thick grey focus glow */
 .accordion-button {
-  color: var(--navy);
   font-weight: bold;
 }
-
-.accordion-button:not(.collapsed) {
-  color: var(--navy);
-  background-color: var(--sky);
-}
-
+ 
 .accordion-button:focus {
-  box-shadow: 0 0 0 .25rem rgba(31, 42, 77, .35);
+  box-shadow: none;
+}
+ 
+/* Thin focus ring, only for keyboard users */
+.accordion-button:focus-visible {
+  outline: 2px solid var(--focus-colour);
+  outline-offset: -2px;
+  z-index: 3;
+}
+ 
+/* Then: Citizens' Forum (navy and sky blue) */
+#then-accordion {
+  --focus-colour: var(--navy);
+  --bs-accordion-btn-color: var(--navy);
+  --bs-accordion-active-color: var(--navy);
+  --bs-accordion-active-bg: var(--sky);
+  --bs-accordion-border-color: var(--sky);
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%231F2A4D' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%231F2A4D' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+ 
+/* Now: Ideas (deep red and pale pink) */
+#now-accordion {
+  --focus-colour: var(--red);
+  --bs-accordion-btn-color: var(--red);
+  --bs-accordion-active-color: var(--red);
+  --bs-accordion-active-bg: #FAEBEC;
+  --bs-accordion-border-color: #E8B9BC;
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23A8202A' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23A8202A' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+ 
+/* Feature quote at the top of an accordion body */
+.feature-quote {
+  border-left: 4px solid var(--quote-colour, var(--navy));
+  padding: .5rem 0 .5rem 1rem;
+  margin: 0 0 1.25rem 0;
+  font-size: 1.1rem;
+}
+ 
+.feature-quote footer {
+  font-size: .9rem;
+  text-align: right;
+  font-style: italic;
+  margin-top: .5rem;
+}
+ 
+#then-accordion .feature-quote { --quote-colour: var(--navy); }
+#now-accordion .feature-quote { --quote-colour: var(--red); }
+ 
+/* Media at the top of each part: stacks on phones, side by side on wider screens */
+.part-media figure {
+  margin-bottom: 1rem;
+}
+ 
+.part-media figcaption {
+  font-size: .9rem;
+  color: var(--detail);
 }
 
 .references p {

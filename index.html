@@ -15,12 +15,12 @@
 <body>
   <div id="content" style="background-color: var(--bg); font-size: 1.1rem;">
     <div class="d-flex p-4 p-md-5 align-items-center" style="background-color: var(--sky);">
-      <div class="container-lg" style="max-width: 100ch;">
+      <div id="top" class="container-lg" style="max-width: 100ch;">
         <h1 style="color: var(--navy);">EDCA 200 2026F: Assignment 3 | History of One Adult Education Program and Today's Counterpart(s)</h1>
         <p class="fs-3 mb-0" style="color: var(--navy);">November 16, 2026 | Nori Sinclair</p>
       </div>
     </div>
-    <div id="top" class="container-md p-md-5 p-4 bg-light">
+    <div class="container-md p-md-5 p-4 bg-light">
       <div class="mx-auto" style="max-width: 100ch;">
         <div class="row">
           <div class="col-md-8">
@@ -78,7 +78,21 @@
         </button>
         <section id="part-then" class="my-5">
           <h2 class="then-heading">The CBC then: Citizens' Forum</h2>
-          <!-- Optional: logo figure here -->
+          <div class="row part-media align-items-center mt-3">
+            <div class="col-md-4">
+              <figure>
+                <img src="images/logo-1940.png" class="img-fluid" alt="Describe the logo here">
+                <figcaption>Caption and source (Author, year)</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <figure>
+                <figcaption class="mb-2">Title of the clip and source (Author, year)</figcaption>
+                <audio controls class="w-100" src="audio/file.mp3"></audio>
+                <p class="small mt-2">One or two sentences on what the clip is about.</p>
+              </figure>
+            </div>
+          </div>
 
           <div class="accordion mt-3" id="then-accordion">
 
@@ -90,9 +104,18 @@
               </h3>
               <div id="then-q1" class="accordion-collapse collapse show">
                 <div class="accordion-body">
-                  - Citizens Forum was modeled after the National Farm Radio Forum that was also airing on CBC at the time. It used the same idea of listening groups and pamphlets distributed before a program to encourage discussion among the listening groups. It was meant to be a more urban focus with less of a specific audience, and it was particularly interested in planning for the post-war era.
-                  - Running from 1943 to 1964, the Citizens' Forum show was run jointly by the CAAE and the CBC. The CAAE wrote the study materials, while CBC chose the speakers and topics and aired the show. (Goodman, 2016; Romanow, 2005)
-
+                  <div class="row">
+                    <div class="col-md-4">
+                      <blockquote class="feature-quote">
+                        <p class="mb-0">"Quote text here."</p>
+                        <footer>(Author, year, p. #)</footer>
+                      </blockquote>
+                    </div>
+                    <div class="col-md-8">
+                      <p> - Citizens Forum was modeled after the National Farm Radio Forum that was also airing on CBC at the time. It used the same idea of listening groups and pamphlets distributed before a program to encourage discussion among the listening groups. It was meant to be a more urban focus with less of a specific audience, and it was particularly interested in planning for the post-war era.
+                        - Running from 1943 to 1964, the Citizens' Forum show was run jointly by the CAAE and the CBC. The CAAE wrote the study materials, while CBC chose the speakers and topics and aired the show. (Goodman, 2016; Romanow, 2005)</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -200,7 +223,21 @@
         <!-- ===================== PART 2: NOW ===================== -->
         <section id="part-now" class="my-5">
           <h2 class="now-heading">The CBC now: Ideas</h2>
-          <!-- Optional: logo figure here -->
+          <div class="row part-media align-items-center mt-3">
+            <div class="col-md-4">
+              <figure>
+                <img src="images/logo-1940.png" class="img-fluid" alt="Describe the logo here">
+                <figcaption>Caption and source (Author, year)</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <figure>
+                <figcaption class="mb-2">Title of the clip and source (Author, year)</figcaption>
+                <audio controls class="w-100" src="audio/file.mp3"></audio>
+                <p class="small mt-2">One or two sentences on what the clip is about.</p>
+              </figure>
+            </div>
+          </div>
 
           <div class="accordion mt-3" id="now-accordion">
 
@@ -340,6 +377,9 @@
         - Supporting: "adult educationists make it their business to help the citizens to become active participants and not mere passive recipients" (Goodman, 2016, p. 629)
 
         <h3 class="mt-4">Discussion question</h3>
+        <div class="ratio ratio-16x9 my-3">
+          <iframe src="https://www.youtube-nocookie.com/embed/gu1h7Sy0r54?start=2379" title="Massey Dialogues: CBC's Ideas, starting at 39:39" allowfullscreen></iframe>
+        </div>
         - The early years of the CBC and the start of the Citizens' Forum came around a time of "earnestness" about the power of adult education (Rutherford, 1990, p. 153). However, in 2021, *Ideas* producer Naheed Mustafa said that she prefers to see producers as "facilitators of conversation," calling the idea of education "paternalistic" (Massey College, 2021, 39:39–40:02). Where do you see yourself on this spectrum? Do you identify as an educator or more as a facilitator? *(Quotes checked against my notes. Changed "the show as a 'facilitator of conversation'" to "producers as 'facilitators of conversation,'" to match her exact words. Added citations.)*
         - Earlier version: Over its six-decade history, the *Ideas* radio program has changed from being explicitly about education, as stated in its first introduction, to the more recent producer being quoted as saying that she doesn't think their role is education, as that's paternalistic. Where do you see yourself on this spectrum? Do you identify as an educator or more as a facilitator?
 
@@ -377,61 +417,61 @@
     </div>
   </div>
   <a href="#top" id="back-to-top" class="back-to-top" aria-label="Back to top">
-  <i class="bi bi-arrow-up" aria-hidden="true"></i>
-</a>
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </a>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
   <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // ---- Open/close all ----
-    var toggleBtn = document.getElementById('toggle-all');
-    var panels = document.querySelectorAll('.accordion-collapse');
+    document.addEventListener('DOMContentLoaded', function () {
+      // ---- Open/close all ----
+      var toggleBtn = document.getElementById('toggle-all');
+      var panels = document.querySelectorAll('.accordion-collapse');
 
-    function allOpen() {
-      return Array.prototype.every.call(panels, function (p) {
-        return p.classList.contains('show');
-      });
-    }
-
-    function updateToggleLabel() {
-      var open = allOpen();
-      toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggleBtn.querySelector('.toggle-all-label').textContent =
-        open ? 'Close all sections' : 'Open all sections';
-      var icon = toggleBtn.querySelector('i');
-      icon.className = open ? 'bi bi-arrows-collapse' : 'bi bi-arrows-expand';
-    }
-
-    if (toggleBtn && panels.length) {
-      toggleBtn.addEventListener('click', function () {
-        var openThem = !allOpen();
-        panels.forEach(function (p) {
-          var c = bootstrap.Collapse.getOrCreateInstance(p, { toggle: false });
-          openThem ? c.show() : c.hide();
+      function allOpen() {
+        return Array.prototype.every.call(panels, function (p) {
+          return p.classList.contains('show');
         });
-      });
-
-      // Keep the label right when someone opens or closes one question by hand
-      panels.forEach(function (p) {
-        p.addEventListener('shown.bs.collapse', updateToggleLabel);
-        p.addEventListener('hidden.bs.collapse', updateToggleLabel);
-      });
-
-      updateToggleLabel();
-    }
-
-    // ---- Back to top: show after scrolling down ----
-    var topBtn = document.getElementById('back-to-top');
-    if (topBtn) {
-      function checkScroll() {
-        topBtn.classList.toggle('visible', window.scrollY > 400);
       }
-      window.addEventListener('scroll', checkScroll, { passive: true });
-      checkScroll();
-    }
-  });
-</script>
-  
+
+      function updateToggleLabel() {
+        var open = allOpen();
+        toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggleBtn.querySelector('.toggle-all-label').textContent =
+          open ? 'Close all sections' : 'Open all sections';
+        var icon = toggleBtn.querySelector('i');
+        icon.className = open ? 'bi bi-arrows-collapse' : 'bi bi-arrows-expand';
+      }
+
+      if (toggleBtn && panels.length) {
+        toggleBtn.addEventListener('click', function () {
+          var openThem = !allOpen();
+          panels.forEach(function (p) {
+            var c = bootstrap.Collapse.getOrCreateInstance(p, { toggle: false });
+            openThem ? c.show() : c.hide();
+          });
+        });
+
+        // Keep the label right when someone opens or closes one question by hand
+        panels.forEach(function (p) {
+          p.addEventListener('shown.bs.collapse', updateToggleLabel);
+          p.addEventListener('hidden.bs.collapse', updateToggleLabel);
+        });
+
+        updateToggleLabel();
+      }
+
+      // ---- Back to top: show after scrolling down ----
+      var topBtn = document.getElementById('back-to-top');
+      if (topBtn) {
+        function checkScroll() {
+          topBtn.classList.toggle('visible', window.scrollY > 400);
+        }
+        window.addEventListener('scroll', checkScroll, { passive: true });
+        checkScroll();
+      }
+    });
+  </script>
+
 </body>
 
 </html>
