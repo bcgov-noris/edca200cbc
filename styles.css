@@ -127,6 +127,180 @@ li.nav-item+li.nav-item {
   margin-top: 0;
 }
 
+/* ===== Accordion colours by section + thinner focus ring =====
+     Contrast checked: navy on sky 8.1:1, red on pale pink 6.3:1, navy on white 14:1.
+*/
+
+/* Shared: bold question titles, no thick grey focus glow */
+.accordion-button {
+  font-weight: bold;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* Thin focus ring, only for keyboard users */
+.accordion-button:focus-visible {
+  outline: 2px solid var(--focus-colour);
+  outline-offset: -2px;
+  z-index: 3;
+}
+
+/* Then: Citizens' Forum (navy and sky blue) */
+#then-accordion {
+  --focus-colour: var(--navy);
+  --bs-accordion-btn-color: var(--navy);
+  --bs-accordion-active-color: var(--navy);
+  --bs-accordion-active-bg: var(--sky);
+  --bs-accordion-border-color: var(--sky);
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%231F2A4D' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%231F2A4D' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+/* Now: Ideas (deep red and pale pink) */
+#now-accordion {
+  --focus-colour: var(--red);
+  --bs-accordion-btn-color: var(--red);
+  --bs-accordion-active-color: var(--red);
+  --bs-accordion-active-bg: #FAEBEC;
+  --bs-accordion-border-color: #E8B9BC;
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23A8202A' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23A8202A' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+/* Feature quote at the top of an accordion body */
+.feature-quote {
+  border-left: 4px solid var(--quote-colour, var(--navy));
+  padding: .5rem 0 .5rem 1rem;
+  margin: 0 0 1.25rem 0;
+  font-size: 1.1rem;
+}
+
+.feature-quote footer {
+  font-size: .9rem;
+  text-align: right;
+  font-style: italic;
+  margin-top: .5rem;
+}
+
+#then-accordion .feature-quote {
+  --quote-colour: var(--navy);
+}
+
+#now-accordion .feature-quote {
+  --quote-colour: var(--red);
+}
+
+/* Media at the top of each part: stacks on phones, side by side on wider screens */
+.part-media figure {
+  margin-bottom: 1rem;
+}
+
+.part-media figcaption {
+  font-size: .9rem;
+  color: var(--detail);
+}
+
+.references p {
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+
+/* Smooth scrolling for jump links, unless the reader prefers less motion */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Leave a little space above a section when you jump to it */
+section[id] {
+  scroll-margin-top: 1rem;
+}
+
+/* Jump menu as a plain list */
+.toc ul {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+.toc li+li {
+  margin-top: .25rem;
+}
+
+.toc a {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+.toc a:hover,
+.toc a:focus {
+  color: var(--red);
+}
+
+/* Open/close all button */
+.toggle-all-btn {
+  color: var(--navy);
+  border: 2px solid var(--navy);
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.toggle-all-btn:hover,
+.toggle-all-btn:focus-visible {
+  color: #ffffff;
+  background-color: var(--navy);
+}
+
+/* Floating back-to-top button */
+.back-to-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 3rem;
+  /* 48px: big enough to tap */
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--navy);
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s ease-in-out;
+  z-index: 1030;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover,
+.back-to-top:focus-visible {
+  background-color: var(--red);
+  color: #ffffff;
+}
+
+.back-to-top:focus-visible,
+.toc a:focus-visible,
+.toggle-all-btn:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 2px;
+}
+
+
 Accordion colours · CSS
 /* ===== Accordion colours by section + thinner focus ring =====
    Paste into styles.css. Replaces the "Optional CSS" accordion block
@@ -199,100 +373,73 @@ Accordion colours · CSS
   font-size: .9rem;
   color: var(--detail);
 }
-
-.references p {
-  padding-left: 2em;
-  text-indent: -2em;
-}
-
-
-/* Smooth scrolling for jump links, unless the reader prefers less motion */
-html {
-  scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
-
-/* Leave a little space above a section when you jump to it */
-section[id] {
-  scroll-margin-top: 1rem;
-}
-
-/* Jump menu as a plain list */
-.toc ul {
-  padding-left: 1.25rem;
-  margin-bottom: 0;
-}
-
-.toc li + li {
-  margin-top: .25rem;
-}
-
-.toc a {
-  color: var(--navy);
-  text-decoration: underline;
-  text-underline-offset: .2em;
-}
-
-.toc a:hover,
-.toc a:focus {
-  color: var(--red);
-}
-
-/* Open/close all button */
-.toggle-all-btn {
-  color: var(--navy);
-  border: 2px solid var(--navy);
-  background-color: #ffffff;
-  font-weight: bold;
-}
-
-.toggle-all-btn:hover,
-.toggle-all-btn:focus-visible {
-  color: #ffffff;
-  background-color: var(--navy);
-}
-
-/* Floating back-to-top button */
-.back-to-top {
-  position: fixed;
-  right: 1.25rem;
-  bottom: 1.25rem;
-  width: 3rem;              /* 48px: big enough to tap */
-  height: 3rem;
+ 
+/* ===== HTML pattern for a feature quote (paste inside an accordion-body) =====
+ 
+<blockquote class="feature-quote">
+  <p class="mb-0">"Quote text here."</p>
+  <footer>(Author, year, p. #)</footer>
+</blockquote>
+<p>Your text here.</p>
+ 
+===== HTML pattern for the media row (paste after the h2, before the accordion) =====
+ 
+<div class="row part-media align-items-center mt-3">
+  <div class="col-md-4">
+    <figure>
+      <img src="images/logo-1940.png" class="img-fluid" alt="Describe the logo here">
+      <figcaption>Caption and source (Author, year)</figcaption>
+    </figure>
+  </div>
+  <div class="col-md-8">
+    <figure>
+      <figcaption class="mb-2">Title of the clip and source (Author, year)</figcaption>
+      <audio controls class="w-100" src="audio/file.mp3"></audio>
+      <p class="small mt-2">One or two sentences on what the clip is about.</p>
+    </figure>
+  </div>
+</div>
+ 
+*/
+ 
+ 
+/* ===== Audio cards (added November 15) =====
+   Why "Featured episode" looked small: .part-media figcaption above sets
+   font-size: .9rem and brown text. Inside an audio card it's back to full size.
+*/
+.audio-card {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: var(--navy);
-  color: #ffffff;
-  font-size: 1.5rem;
-  text-decoration: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .2s ease-in-out;
-  z-index: 1030;
+  gap: 1rem;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border: 2px solid var(--card-colour, var(--navy));
+  border-left-width: 6px;
+  border-radius: .5rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
 }
-
-.back-to-top.visible {
-  opacity: 1;
-  visibility: visible;
+ 
+.audio-card .audio-icon {
+  font-size: 2.25rem;
+  line-height: 1;
+  color: var(--card-colour, var(--navy));
 }
-
-.back-to-top:hover,
-.back-to-top:focus-visible {
-  background-color: var(--red);
-  color: #ffffff;
+ 
+.audio-card .audio-body {
+  flex: 1;
+  min-width: 0;
 }
-
-.back-to-top:focus-visible,
-.toc a:focus-visible,
-.toggle-all-btn:focus-visible {
-  outline: 3px solid var(--red);
-  outline-offset: 2px;
+ 
+.audio-card figcaption {
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: .5rem;
 }
+ 
+.audio-card .audio-meta {
+  font-size: .9rem;
+  color: var(--detail);
+}
+ 
+#part-then .audio-card { --card-colour: var(--navy); }
+#part-now .audio-card { --card-colour: var(--red); }
