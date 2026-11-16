@@ -145,3 +145,95 @@ li.nav-item+li.nav-item {
   padding-left: 2em;
   text-indent: -2em;
 }
+
+
+/* Smooth scrolling for jump links, unless the reader prefers less motion */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Leave a little space above a section when you jump to it */
+section[id] {
+  scroll-margin-top: 1rem;
+}
+
+/* Jump menu as a plain list */
+.toc ul {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+.toc li + li {
+  margin-top: .25rem;
+}
+
+.toc a {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+.toc a:hover,
+.toc a:focus {
+  color: var(--red);
+}
+
+/* Open/close all button */
+.toggle-all-btn {
+  color: var(--navy);
+  border: 2px solid var(--navy);
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.toggle-all-btn:hover,
+.toggle-all-btn:focus-visible {
+  color: #ffffff;
+  background-color: var(--navy);
+}
+
+/* Floating back-to-top button */
+.back-to-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 3rem;              /* 48px: big enough to tap */
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--navy);
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s ease-in-out;
+  z-index: 1030;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover,
+.back-to-top:focus-visible {
+  background-color: var(--red);
+  color: #ffffff;
+}
+
+.back-to-top:focus-visible,
+.toc a:focus-visible,
+.toggle-all-btn:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 2px;
+}
