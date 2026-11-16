@@ -1,11 +1,17 @@
 /* Colour palette: vintage, from the 1940-1958 CBC/Radio-Canada logo (contrast-checked) */
 :root {
-  --navy: #1F2A4D;   /* navy: headings, tabs, "then" headings (14:1 on white, 12.2:1 on cream) */
-  --red: #A8202A;    /* deep red: active tab, quote marks, "now" headings (7.2:1 on white, 6.3:1 on cream) */
-  --sky: #9CCBEB;    /* sky blue from the 1940 logo: header background with navy text (8.1:1); backgrounds and lines only, not for text */
-  --bg: #F5EFE0;     /* warm cream page background */
-  --text: #2B2B2B;   /* charcoal body text (12.3:1 on cream) */
-  --detail: #6B5B3E; /* warm brown: small details (5.7:1 on cream) */
+  --navy: #1F2A4D;
+  /* navy: headings, tabs, "then" headings (14:1 on white, 12.2:1 on cream) */
+  --red: #A8202A;
+  /* deep red: active tab, quote marks, "now" headings (7.2:1 on white, 6.3:1 on cream) */
+  --sky: #9CCBEB;
+  /* sky blue from the 1940 logo: header background with navy text (8.1:1); backgrounds and lines only, not for text */
+  --bg: #F5EFE0;
+  /* warm cream page background */
+  --text: #2B2B2B;
+  /* charcoal body text (12.3:1 on cream) */
+  --detail: #6B5B3E;
+  /* warm brown: small details (5.7:1 on cream) */
 }
 
 body {
@@ -133,4 +139,9 @@ li.nav-item+li.nav-item {
 
 .accordion-button:focus {
   box-shadow: 0 0 0 .25rem rgba(31, 42, 77, .35);
+}
+
+.references p {
+  padding-left: 2em;
+  text-indent: -2em;
 }
